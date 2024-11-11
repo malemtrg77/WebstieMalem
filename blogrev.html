@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Pribadi - Malem Pagi Tarigan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Internal */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #004d80;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .about img {
+    width: 100%;
+    max-width: 300px; /* Set max width */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+        .timeline li {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .timeline li:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #004d80;
+        }
+        .timeline li .content {
+            margin-left: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        .blog-post img {
+    max-width: 250px; /* Maksimal lebar gambar */
+    width: 100%; /* Mengatur agar gambar responsif */
+    height: auto;  /* Menjaga rasio gambar */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+        .testimonial {
+            background: #004d80;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .testimonial blockquote {
+            font-size: 24px;
+            font-style: italic;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .contact form button {
+            padding: 12px 20px;
+            background-color: #004d80;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Blog Pribadi Malem Pagi Tarigan</h1>
+        <p>Perjalanan Saya dalam Mencapai Impian, Pembelajaran, dan Karya</p>
+        <nav>
+            <a href="#about">Tentang Saya</a>
+            <a href="#timeline">Masa Depan & Kesibukan</a>
+            <a href="#blog">Blog</a>
+            <a href="#testimonials">Testimonial</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2>Tentang Saya</h2>
+            <img src="images/fotoku-1.png" alt="Malem Pagi Tarigan">
+            <p>Halo, saya Malem Pagi Tarigan, seorang mahasiswa Pendidikan Matematika di Universitas Syiah Kuala. Saya memiliki minat besar pada matematika dan bagaimana konsep-konsep ini bisa diterapkan dalam kehidupan sehari-hari, terutama dalam konteks Islami. Saya percaya bahwa pendidikan adalah kunci untuk membuka pintu-pintu masa depan dan berkontribusi pada masyarakat.</p>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section timeline">
+            <h2>Rencana Masa Depan & Kesibukan Saat Ini</h2>
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Pendidikan S2 di Luar Negeri</h3>
+                        <p>Saya berencana melanjutkan studi S2 di Australia, mengembangkan pengetahuan matematika, dan mengeksplorasi inovasi dalam bidang ini.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Pengembangan Diri melalui Kegiatan Sosial</h3>
+                        <p>Saya aktif dalam kegiatan sosial dan ingin terus meningkatkan keterampilan kepemimpinan serta berkontribusi pada komunitas saya.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Mengajar dan Menulis Buku</h3>
+                        <p>Saya berharap dapat berbagi pengetahuan saya dengan lebih banyak orang, mengajar di sekolah, dan menulis buku matematika yang mudah dipahami oleh masyarakat umum.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section blog">
+            <h2>Pengalaman, Kenangan, dan Visi Saya</h2>
+            <div class="blog-post">
+                <img src="images/poto-5.jpg" alt="Blog Post 1">
+                <h3>Pengalaman dan Kenangan MBKM USK UNGGUL</h3>
+                <p>Program MBKM di SMP Negeri 2 Mesjid Raya menjadi pengalaman berharga bagi kami, sebuah perjalanan yang penuh pelajaran, tantangan, dan kebersamaan. Dalam tiga bulan ini, kami tidak hanya belajar mengajar, tetapi juga memahami arti menjadi pendidik yang tulus serta menciptakan inspirasi bagi generasi muda. Dari setiap kelas, setiap tawa, dan setiap interaksi dengan siswa, kami menemukan makna baru dalam pendidikan. Kebersamaan ini mengukuhkan semangat kami untuk terus berkontribusi bagi dunia pendidikan, membawa perubahan, dan mengukir kenangan yang akan selalu kami kenang bersama.</p>
+            </div>
+            <div class="blog-post">
+                <img src="images/study abroad.jpg" alt="Blog Post 2">
+                <h3>Rencana Pendidikan Masa Depan</h3>
+                <p>Sebagai seseorang yang bertekad untuk terus belajar dan berkembang, saya memiliki impian besar untuk melanjutkan studi di luar negeri, khususnya di Australia. Australia menawarkan standar pendidikan yang tinggi, lingkungan akademik yang mendukung, serta fokus pada penelitian dan inovasi yang sejalan dengan tujuan saya. Di sana, saya berharap dapat menggali ilmu lebih dalam, memperluas wawasan, serta membangun jaringan global dengan para akademisi dan profesional dari berbagai latar belakang. Melalui pendidikan di Australia, saya ingin mengasah keterampilan saya lebih jauh dan membawa kembali ilmu yang bermanfaat untuk berkontribusi bagi bangsa.</p>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonials" class="section testimonial">
+            <h2>Testimonial</h2>
+            <blockquote>
+                "Malem adalah pribadi yang penuh semangat dan memiliki visi yang jelas untuk masa depannya. Keterampilannya dalam matematika dan penguasaan materi selalu menginspirasi banyak orang."
+                <footer>- Winanda Maharani Malik </footer>
+            </blockquote>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2>Kontak Saya</h2>
+            <form action="https://formspree.io/f/mzzbgzed" method="POST">
+                <input type="text" name="name" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+                <p><a href="tugassssfix.html" class="btn btn-white btn-outline-white py-3 px-4">Back To Home</a></p>
+                <p><a href="single.html" class="btn btn-white btn-outline-white py-3 px-4">Back To My Blog</a></p>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Malem Pagi Tarigan. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
